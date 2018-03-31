@@ -163,11 +163,11 @@ function draw() {
         }
         socket.emit("send obj", statistika);
     }
-    // if (frameCount % 1 == 0) {
-    //     var x=Math.floor(random(1,40));
-    //     var y=Math.floor(random(1,31));
-    //     anamal_erevut(x,y);
-    // }
+     if (frameCount % 1 == 0) {
+         var x=Math.floor(random(1,40));
+         var y=Math.floor(random(1,31));
+         anamal_erevut(x,y);
+     }
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
             if (matrix[y][x] == 1) {
